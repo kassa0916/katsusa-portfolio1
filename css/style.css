@@ -1,0 +1,53 @@
+body{
+	background-color: #FFEFD5;
+}
+
+header{
+	position:relative;/*相対配置*/
+	margin-bottom:50px; 
+}
+
+header p{
+	position:absolute;/*絶対配置*/
+	top:50%;
+	left:50%;
+	-ms-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    color:white;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+header img{
+  width: 100%;
+  object-fit: scale-down;
+}
+
+footer{
+	text-align: center;
+}
+
+@media screen and (min-width: 961px) {
+.container{
+	width: 100%;
+	display: flex;
+	display: -ms-flexbox; /* IE10 */
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap; /* IE10 */
+}
+.container > div{
+	width: 50%;
+	padding: 10px;
+}
+}
+@media screen and (max-width: 960px) {
+	/*.container > div{
+		width: 100%;*/
+	.container{
+		display: block;
+		text-align: center;
+	}
+}
